@@ -7,11 +7,11 @@
 
   <span class="spacer"></span>
 
-  <button mat-icon-button>
+  <button mat-icon-button matTooltip="View notifications">
     <mat-icon>notifications</mat-icon>
   </button>
 
-  <button mat-icon-button>
+  <button mat-icon-button matTooltip="Your profile">
     <mat-icon>account_circle</mat-icon>
   </button>
 </mat-toolbar>
@@ -94,6 +94,104 @@
         <div class="example-item">
           <h3>Query</h3>
           <mat-progress-bar mode="query"></mat-progress-bar>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <h2>Menu</h2>
+
+        <div class="example-row">
+          <button mat-flat-button [matMenuTriggerFor]="actionsMenu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+
+          <mat-menu #actionsMenu="matMenu">
+            <button mat-menu-item (click)="onMenuAction('edit')">
+              <mat-icon>edit</mat-icon>
+              Edit
+            </button>
+
+            <button mat-menu-item (click)="onMenuAction('duplicate')">
+              <mat-icon>content_copy</mat-icon>
+              Duplicate
+            </button>
+
+            <mat-divider></mat-divider>
+
+            <button mat-menu-item (click)="onMenuAction('delete')">
+              <mat-icon>delete</mat-icon>
+              Delete
+            </button>
+          </mat-menu>
+
+          <button mat-flat-button [matMenuTriggerFor]="settingsMenu">
+            <mat-icon>settings</mat-icon>
+            Settings
+          </button>
+
+          <mat-menu #settingsMenu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>person</mat-icon>
+              Profile
+            </button>
+
+            <button mat-menu-item [matMenuTriggerFor]="themeMenu">
+              <mat-icon>palette</mat-icon>
+              Theme
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>logout</mat-icon>
+              Logout
+            </button>
+          </mat-menu>
+
+          <mat-menu #themeMenu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>light_mode</mat-icon>
+              Light
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>dark_mode</mat-icon>
+              Dark
+            </button>
+
+            <button mat-menu-item>
+              <mat-icon>computer</mat-icon>
+              System
+            </button>
+          </mat-menu>
+        </div>
+      </section>
+
+      <section class="demo-section">
+        <h2>Tooltips</h2>
+
+        <div class="example-row">
+          <button mat-flat-button matTooltip="Click to save your changes">Save</button>
+
+          <button mat-flat-button matTooltip="Tooltip above" matTooltipPosition="above">
+            Above
+          </button>
+
+          <button mat-flat-button matTooltip="Tooltip on the left" matTooltipPosition="left">
+            Left
+          </button>
+
+          <button mat-flat-button matTooltip="Tooltip on the right" matTooltipPosition="right">
+            Right
+          </button>
+
+          <button
+            mat-flat-button
+            matTooltip="This tooltip has a delay"
+            matTooltipPosition="right"
+            [matTooltipShowDelay]="500"
+            [matTooltipHideDelay]="1000"
+          >
+            Delayed
+          </button>
         </div>
       </section>
     </div>

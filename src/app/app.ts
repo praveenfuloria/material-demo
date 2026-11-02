@@ -14,6 +14,8 @@ import {
 } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
 
@@ -30,6 +32,8 @@ import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatProgressBarModule,
+    MatMenuModule,
+    MatTooltipModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
@@ -69,5 +73,9 @@ export class App {
         }
       },
     });
+  }
+
+  onMenuAction(action: string): void {
+    console.log('Menu action selected: ', action);
   }
 }
