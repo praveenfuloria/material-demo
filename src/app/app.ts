@@ -16,6 +16,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
 
@@ -34,6 +36,8 @@ import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
     MatProgressBarModule,
     MatMenuModule,
     MatTooltipModule,
+    MatExpansionModule,
+    MatChipsModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

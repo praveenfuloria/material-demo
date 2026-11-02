@@ -194,6 +194,97 @@
           </button>
         </div>
       </section>
+
+      <section class="demo-section">
+        <h2>Expansion Panels</h2>
+
+        <mat-accordion multi>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Personal Information</mat-panel-title>
+              <mat-panel-description> Your name and contact details </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <p>
+              This section contains your personal information such as name, email, and phone number.
+            </p>
+            <mat-action-row>
+              <button mat-button>Cancel</button>
+              <button mat-flat-button>Save</button>
+            </mat-action-row>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel expanded>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Account Settings</mat-panel-title>
+              <mat-panel-description> Manage your preferences </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <p>Configure your notification preferences, privacy settings, and display options.</p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>Billing information</mat-panel-title>
+              <mat-panel-description> Payment methods and history </mat-panel-description>
+            </mat-expansion-panel-header>
+
+            <p>View your payment methods, billing address, and transaction history.</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </section>
+
+      <section class="demo-section">
+        <h2>Chips</h2>
+
+        <div class="example-row">
+          <mat-chip-set>
+            <mat-chip>
+              <mat-icon matChipAvatar>code</mat-icon>
+              Angular
+            </mat-chip>
+            <mat-chip>
+              <mat-icon matChipAvatar>code</mat-icon>
+              TypeScript
+            </mat-chip>
+            <mat-chip>
+              <mat-icon matChipAvatar>palette</mat-icon>
+              Material
+            </mat-chip>
+          </mat-chip-set>
+        </div>
+
+        <div class="chip-example">
+          <p>Select your interests:</p>
+
+          <mat-chip-listbox multiple>
+            <mat-chip-option>Frontend</mat-chip-option>
+            <mat-chip-option>Backend</mat-chip-option>
+            <mat-chip-option>DevOps</mat-chip-option>
+            <mat-chip-option>Design</mat-chip-option>
+          </mat-chip-listbox>
+        </div>
+
+        <div class="chip-example">
+          <p>Selected Tags:</p>
+          <mat-chip-set>
+            <mat-chip>
+              Important
+              <mat-icon matChipRemove>cancel</mat-icon>
+            </mat-chip>
+
+            <mat-chip>
+              Urgent
+              <mat-icon matChipRemove>cancel</mat-icon>
+            </mat-chip>
+
+            <mat-chip>
+              Review
+              <mat-icon matChipRemove>cancel</mat-icon>
+            </mat-chip>
+          </mat-chip-set>
+        </div>
+      </section>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -92,3 +92,8 @@ mat-sidenav {
 mat-divider {
   margin: 32px 0;
 }
+
+mat-accordion {
+  display: block;
+  max-width: 500px;
+}
