@@ -12,6 +12,8 @@ import {
   MatSnackBarRef,
   TextOnlySnackBar,
 } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
 
@@ -26,6 +28,8 @@ import { ConfirmDialog } from './confirm-dialog/confirm-dialog';
     MatDividerModule,
     MatDialogModule,
     MatSnackBarModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
