@@ -1,12 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterOutlet } from '@angular/router';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  imports: [RouterOutlet, MatButtonModule, MatIconModule],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [MatButtonModule, MatIconModule, MatCardModule],
   templateUrl: './app.html',
+  styleUrl: './app.css',
 })
 export class App {}

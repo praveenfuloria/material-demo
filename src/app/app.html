@@ -1,46 +1,31 @@
 <div class="container">
-  <button mat-button>Basic</button>
-  <button mat-raised-button>Raised</button>
-  <button mat-stroked-button>Stroked</button>
-  <button mat-flat-button>Flat</button>
+  <mat-card appearance="raised" class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-avatar"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
 
-  <button mat-flat-button class="warn">Delete</button>
-  <button mat-flat-button class="accent">Accent</button>
-</div>
+    <img
+      mat-card-image
+      src="https://material.angular.dev/assets/img/examples/shiba2.jpg"
+      alt="Photo of a Shiba Inu"
+    />
 
-<div class="container">
-  <button mat-icon-button>
-    <mat-icon>home</mat-icon>
-  </button>
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+        Japan.
+      </p>
+    </mat-card-content>
 
-  <button mat-icon-button>
-    <mat-icon>settings</mat-icon>
-  </button>
+    <mat-card-actions align="end">
+      <button mat-button>Like</button>
+      <button mat-button>Share</button>
+    </mat-card-actions>
 
-  <button mat-icon-button class="warn">
-    <mat-icon>delete</mat-icon>
-  </button>
-
-  <button mat-icon-button>
-    <mat-icon>favorite</mat-icon>
-  </button>
-</div>
-
-<div class="container">
-  <button mat-fab>
-    <mat-icon>add</mat-icon>
-  </button>
-
-  <button mat-mini-fab>
-    <mat-icon>edit</mat-icon>
-  </button>
-</div>
-
-<div class="container">
-  <button mat-raised-button>
-    <mat-icon>send</mat-icon>
-    Send
-  </button>
-
-  <button mat-raised-button disabled>Disabled</button>
+    <mat-card-footer>
+      <p class="footer-text">Updated 2 minutes ago</p>
+    </mat-card-footer>
+  </mat-card>
 </div>
